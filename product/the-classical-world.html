@@ -5,80 +5,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Classical World | Book Journey</title>
+    <link rel="stylesheet" href="../style.css">
 </head>
 
-<body style="background-color: #FFF0F3;">
+<body>
 
     <header>
-        <h1 style="text-align: center;">The Classical World</h1>
+
+        <h1>The Classical World</h1>
 
         <nav>
-            <ul style="list-style-type: none; display: flex; justify-content: center; gap: 20px; padding: 0;">
+            <ul>
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="../about.html">About</a></li>
                 <li><a href="../contact.html">Contact</a></li>
+                
             </ul>
         </nav>
+
     </header>
 
     <main>
 
-        <section>
-            <h2 style="text-align: center;">The Classical World</h2>
+        <section class="product-details">
 
-            <img
-                src="https://github.com/jurisdion-flores/Journey-between-pages/blob/main/classical.jpg?raw=true"
-                alt="The Classical World"
-                width="200"
-                height="200"
-                style="display: block; margin: 0 auto;"
-            >
+            <h2>The Classical World</h2>
+
+            <img src="https://github.com/jurisdion-flores/Journey-between-pages/blob/main/classical.jpg?raw=true"
+                alt="The Classical World">
 
             <br>
 
             <p>
-                The Classical World is a captivating book that takes readers on a journey through the mysterious and
-                eerie world of theater. With its unique blend of suspense, drama, and intrigue, this book is perfect for
-                those who love to be captivated by a good story.
+                A comprehensive guide to the ancient world
             </p>
 
             <p>
-                The book explores the lives of actors, directors, and playwrights, delving into the secrets and scandals
-                that unfold behind the scenes. From the bright lights of the stage to the dark corners of backstage, the
-                story is filled with twists and turns that will keep readers on the edge of their seats.
+                A comprehensive guide to the ancient world, exploring its history, culture, and significance.
             </p>
+
         </section>
 
         <section>
-            <h2 style="text-align: center;">Why You'll Love It</h2>
 
-            <ul style="list-style-type: none; text-align: center; padding: 0;">
-                <li>The Classical World</li>
-                <li>Unique and captivating</li>
-                <li>Classical and timeless</li>
-                <li>Perfect for book lovers</li>
-            </ul>
-        </section>
+            <h2>Book Details</h2>
 
+            <table border="1">
 
-        <section>
-
-            <h2 style="text-align: center;">Book Details</h2>
-
-            <table border="1" style="margin: 0 auto;">
-                
                 <tr>
                     <th>Size</th>
-                    <th>Title</th>
+                    <th>Pages</th>
                     <th>Genre</th>
                     <th>Price</th>
                 </tr>
 
                 <tr>
-                    <td>500 pages</td>
-                    <td>The Classical World</td>
-                    <td>Classical &amp; Timeless</td>
-                    <td>₱1,407</td>
+                    <td>Medium</td>
+                    <td>320</td>
+                    <td>History</td>
+                    <td>₱1,100</td>
                 </tr>
 
             </table>
@@ -86,80 +71,63 @@
         </section>
 
         <section>
+
+            <h2>Why You'll Love It</h2>
+
+            <ul>
+                <li>Comprehensive coverage of ancient history</li>
+                <li>Richly detailed descriptions of cultural practices</li>
+                <li>Insightful analysis of historical significance</li>
+                <li>Perfect for history enthusiasts</li>
+            </ul>
+
+        </section>
+
+        <section>
             <h2>Order Enquiry</h2>
-
+        
             <form>
-
                 <label for="quantity">Quantity:</label>
-                <input
-                    type="number"
-                    id="quantity"
-                    name="quantity"
-                    min="1"
-                    max="20"
-                >
+                <input type="number" id="quantity" name="quantity" min="1" max="20">
 
                 <br><br>
 
                 <fieldset>
                     <legend>Choose a delivery method:</legend>
-
-                    <input
-                        type="radio"
-                        id="standard"
-                        name="delivery"
-                        value="standard"
-                    >
+        
+                    <input type="radio" id="standard" name="delivery" value="standard">
                     <label for="standard">Standard Delivery</label>
-
-                    <input
-                        type="radio"
-                        id="express"
-                        name="delivery"
-                        value="express"
-                    >
+        
+                    <input type="radio" id="express" name="delivery" value="express">
                     <label for="express">Express Delivery</label>
                 </fieldset>
-
+        
                 <p>Optional Extras:</p>
-
-                <input
-                    type="checkbox"
-                    id="gift"
-                    name="extras"
-                    value="gift"
-                >
+        
+                <input type="checkbox" id="gift" name="extras" value="gift">
                 <label for="gift">Gift Wrapping</label>
-
-                <input
-                    type="checkbox"
-                    id="handling"
-                    name="extras"
-                    value="handling"
-                >
+        
+                <input type="checkbox" id="handling" name="extras" value="handling">
                 <label for="handling">Express Handling</label>
-
+        
                 <br><br>
-
+        
                 <label for="email">Contact Email:</label>
-                <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    required
-                >
-
+                <input type="email" id="email" name="email" required>
+        
                 <br><br>
-
+        
                 <button type="submit">Send Enquiry</button>
-
             </form>
         </section>
 
+
     </main>
 
-    <footer style="text-align: center; padding: 20px;">
-        <p>© 2026 Book Journey. Made with love and books.</p>
+    <footer>
+
+        <p>&copy; 2026 Book Journey. All rights reserved.</p>
+
     </footer>
 
 </body>
