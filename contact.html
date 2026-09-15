@@ -4,117 +4,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <title>Contact Us | Book Journey</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body style="background-color: #ffeccb; font-family: Arial, sans-serif; color: #333;">
+<body>
 
     <header>
+        <div class="header-text">
+            <h1>Contact Us</h1>
+            <p>Good books, good moments</p>
+        </div>
 
         <nav>
-            <ul style="list-style-type: none; display: flex; justify-content: center; gap: 20px; padding: 0;">
+            <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-
-        <h1 style="text-align: center;">Contact Us</h1>
-
     </header>
 
     <main>
 
-        <p style="text-align: center;">
-            Have a question or want to visit Book Journey
-            We would love to hear from you!
-        </p>
+        <section>
+            <h2>Get in Touch</h2>
 
-        <p style="text-align: center;">📍 Location: Manila, Philippines</p>
+            <p>
+                Have a question or want to visit Book Journey?
+                We would love to hear from you!
+            </p>
 
-        <p style="text-align: center;">📞 Phone: 0998-765-4321</p>
+            <p>📍 Location: Manila, Philippines</p>
+            <p>📞 Phone: 0998-765-4321</p>
+            <p>📧 Email: bookjourney@gmail.com</p>
+        </section>
 
-        <p style="text-align: center;">📧 Email: bookjourney@gmail.com</p>
+        <section>
+            <h2>Opening Hours</h2>
 
-        <h2 style="text-align: center;">Opening Hours</h2>
+            <p>Monday - Friday: 9:00 AM - 7:00 PM</p>
+            <p>Saturday - Sunday: 10:00 AM - 6:00 PM</p>
+        </section>
 
-        <p style="text-align: center;">Monday - Friday: 8:00 AM - 9:00 PM</p>
+        <section>
+            <h2>Send Us a Message</h2>
 
-        <p style="text-align: center;">Saturday - Sunday: 7:00 AM - 8:00 PM</p>
+            <form>
 
-        <p style="text-align: center;">
-            Follow us on social media for updates, new books, and special offers.
-        </p>
+                <fieldset>
+                    <legend>Your details</legend>
 
-    </main>
-<br>
-    <section>
-        <h2 style="text-align: center;">Let's Connect</h2>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
 
-        <p style="text-align: center;">
-            Follow the page for new locations, book recommendations, and 
-            more book journey discoveries.
-        </p>
-    </section>
- <h2 style="text-align: center;">Send Us a Message</h2>
+                    <br><br>
 
-        <form>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
 
-            <fieldset>
+                    <br><br>
 
-                <legend>Your details</legend>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+                    <label for="subject">Subject:</label>
+                    <select id="subject" name="subject" required>
+                        <option value="">Choose a subject</option>
+                        <option value="question">Ask a question</option>
+                        <option value="feedback">Give feedback</option>
+                        <option value="reservation">Ask about reservations</option>
+                        <option value="other">Something else</option>
+                    </select>
 
-                <br><br>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                    <br><br>
 
-                <br><br>
+                    <label for="message">Message:</label>
+                    <br>
 
-                <label for="subject">Subject:</label>
-                <select id="subject" name="subject" required>
-                    
-                    <option value="">Choose a subject</option>
-                    <option value="question">Ask a question</option>
-                    <option value="feedback">Give feedback</option>
-                    <option value="reservation">Ask about reservations</option>
-                    <option value="other">Something else</option>
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="5"
+                        required></textarea>
 
-                </select>
+                </fieldset>
 
-                <br><br>
+                <div>
+                    <button type="submit">Send Message</button>
+                </div>
 
-                <label for="message">Message:</label>
-
-                <br>
-
-                <textarea
-                    id="message"
-                    name="message"
-                    rows="5"
-                    required
-                    style="width: 100%; box-sizing: border-box;"
-                ></textarea>
-
-            </fieldset>
-
-            <div style="text-align: center; margin-top: 15px;">
-
-                <button type="submit">Send message</button>
-
-            </div>
-
-        </form>
+            </form>
+        </section>
 
     </main>
 
     <footer>
-
-        <p style="text-align: center;">
-            &copy; 2026 Coffee Stop. All rights reserved.
-        </p>
-
+        <p>&copy; 2026 Book Journey. All rights reserved.</p>
     </footer>
 
 </body>

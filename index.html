@@ -5,103 +5,147 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Journey</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body style="background-color: #ffeccb; font-family: Arial, sans-serif; color: #333;">
+<body>
 
     <header>
-        <h1 style="text-align: center;">Book Journey</h1>
 
-        <p style="text-align: center;">Good Books, good moments</p>
+        <div class="header-text">
+            <h1>Book Journey</h1>
+            <p>Good books, good moments</p>
+        </div>
 
         <nav>
-            <ul style="list-style-type: none; display: flex; justify-content: center; gap: 20px; padding: 0;">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
             </ul>
         </nav>
+
     </header>
+
 
     <main>
 
-        <section>
-            <h2 style="text-align: center;">Juris Book Journey</h2>
+        <section class="cover">
 
-            <p style="text-align: center;">
-                A small Books shop created for people who enjoy reading books and relaxing moments.
+            <h2>Book Journey</h2>
+
+            <p>
+                A cozy bookstore created for people who love books and quiet moments.
             </p>
 
-            <img src="https://northerncalstyle.com/wp-content/uploads/2024/02/table-books.jpg"
-                alt="books Table"
-                width="500"
-                height="300"
-                style="display: block; margin: 0 auto;">
+            <img
+                src="https://daily.sevenfifty.com/app/uploads/2017/12/SFD_Bookstore_Bars_Kramerbooks_CR_courtesy_Kramerbooks_2520x14202.jpg"
+                alt="Bookshelf"
+            >
+
         </section>
 
-        <br>
+        <h2>Our Best Sellers books</h2>
 
-        <h2 style="text-align: center;">Our books available</h2>
+       <div class="product-grid">
 
-        <br>
+    <article class="product-card">
 
-        <article>
-            <h3 style="text-align: center;">The Classical World</h3>
+        <img
+            src="https://github.com/jurisdion-flores/Journey-between-pages/blob/main/harrypotter.jpg?raw=true"
+            alt="Harry Potter book"
+        >
 
-            <p style="text-align: center;">₱1,407</p>
+        <h3>Harry Potter and the Philosopher's Stone</h3>
 
-            <p style="text-align: center;">
-                A comprehensive guide to the ancient civilizations of Greece and Rome.
-            </p>
+        <p>₱1,250</p>
 
-            <img src="https://github.com/jurisdion-flores/Journey-between-pages/blob/main/classical.jpg?raw=true"
-                alt="The Classical World"
-                width="200"
-                height="200"
-                style="display: block; margin: 0 auto;">
-        </article>
+        <p>
+            The first book in the Harry Potter series, following the adventures of a young wizard.
+        </p>
 
-        <br>
+        <p>
+            <button>
+                <a href="product/harry-potter-philosophers-stone.html">
+                    View details
+                </a>
+            </button>
+        </p>
 
-        <article>
-            <h3 style="text-align: center;">Theater of the World</h3>
+    </article>
 
-            <p style="text-align: center;">₱2,147</p>
 
-            <p style="text-align: center;">
-                A journey through the theatrical traditions of the world.
-            </p>
+    <article class="product-card">
 
-            <img src="https://github.com/jurisdion-flores/Journey-between-pages/blob/main/Theater.jpg?raw=true"
-                alt="Theater of the World"
-                width="200"
-                height="200"
-                style="display: block; margin: 0 auto;">
-        </article>
+        <img
+            src="https://github.com/jurisdion-flores/Journey-between-pages/blob/main/classical.jpg?raw=true"
+            alt="The Classical World book"
+        >
 
-        <br>
+        <h3>The Classical World</h3>
 
-        <article>
-            <h3 style="text-align: center;">Harry Potter</h3>
+        <p>₱1,100</p>
 
-            <p style="text-align: center;">₱1,250</p>
+        <p>
+            A comprehensive guide to the ancient world.
+        </p>
 
-            <p style="text-align: center;">
-                A young wizard's journey through the magical world of Hogwarts.
-            </p>
+        <p>
+            <button>
+                <a href="product/the-classical-world.html">
+                    View details
+                </a>
+            </button>
+        </p>
 
-            <img src="https://github.com/jurisdion-flores/Journey-between-pages/blob/main/harrypotter.jpg?raw=truee"
-                alt="Harry Potter"
-                width="200"
-                height="200"
-                style="display: block; margin: 0 auto;">
-        </article>
+    </article>
 
+
+    <article class="product-card">
+
+        <img
+            src="https://github.com/jurisdion-flores/Journey-between-pages/blob/main/Theater.jpg?raw=true"
+            alt="Theater book"
+        >
+
+        <h3>Theater</h3>
+
+        <p>₱1,200</p>
+
+        <p>
+            A comprehensive guide to the world of theater.
+        </p>
+
+        <p>
+            <button>
+                <a href="product/theater.html">
+                    View details
+                </a>
+            </button>
+        </p>
+
+    </article>
+
+</div>
     </main>
 
     <footer>
-        <p style="text-align: center;">&copy; 2026 Book Journey. All rights reserved.</p>
+
+        <p>
+            &copy; 2026 Book Journey. All rights reserved.
+        </p>
+
     </footer>
 
 </body>
+
 </html>
