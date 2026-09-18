@@ -2,133 +2,97 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Classical World | Book Journey</title>
-    <link rel="stylesheet" href="../style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Classical World | Book Journey</title>
+  <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
 
-    <header>
+  <header>
+    <h1>The Classical World</h1>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-        <h1>The Classical World</h1>
+  <main>
 
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../about.html">About</a></li>
-                <li><a href="../contact.html">Contact</a></li>
-                
-            </ul>
-        </nav>
+    <section class="product-details">
+      <h2>The Classical World</h2>
+      <img src="https://github.com/jurisdion-flores/Journey-between-pages/blob/main/classical.jpg?raw=true"
+           alt="The Classical World book cover">
+      <p>
+        A comprehensive guide to the ancient world, exploring its history, culture, and significance.
+      </p>
+    </section>
 
-    </header>
+    <section>
+      <h2>Book Details</h2>
+      <table>
+        <tr>
+          <th>Size</th>
+          <th>Pages</th>
+          <th>Genre</th>
+          <th>Price</th>
+        </tr>
+        <tr>
+          <td>Medium</td>
+          <td>320</td>
+          <td>History</td>
+          <td>₱1,100</td>
+        </tr>
+      </table>
+    </section>
 
-    <main>
+    <section>
+      <h2>Why You'll Love It</h2>
+      <ul>
+        <li>Comprehensive coverage of ancient history</li>
+        <li>Richly detailed descriptions of cultural practices</li>
+        <li>Insightful analysis of historical significance</li>
+        <li>Perfect for history enthusiasts</li>
+      </ul>
+    </section>
 
-        <section class="product-details">
+    <section>
+      <h2>Order Enquiry</h2>
+      <!-- Added action and method so the form works -->
+      <form action="mailto:your@email.com" method="post" enctype="text/plain">
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="20">
 
-            <h2>The Classical World</h2>
+        <fieldset>
+          <legend>Choose a delivery method:</legend>
+          <input type="radio" id="standard" name="delivery" value="standard">
+          <label for="standard">Standard Delivery</label>
+          <input type="radio" id="express" name="delivery" value="express">
+          <label for="express">Express Delivery</label>
+        </fieldset>
 
-            <img src="https://github.com/jurisdion-flores/Journey-between-pages/blob/main/classical.jpg?raw=true"
-                alt="The Classical World">
+        <p>Optional Extras:</p>
+        <input type="checkbox" id="gift" name="extras" value="gift">
+        <label for="gift">Gift Wrapping</label>
+        <input type="checkbox" id="handling" name="extras" value="handling">
+        <label for="handling">Express Handling</label>
 
-            <br>
+        <label for="email">Contact Email:</label>
+        <input type="email" id="email" name="email" required>
 
-            <p>
-                A comprehensive guide to the ancient world
-            </p>
+        <button type="submit">Send Enquiry</button>
+      </form>
+    </section>
 
-            <p>
-                A comprehensive guide to the ancient world, exploring its history, culture, and significance.
-            </p>
+  </main>
 
-        </section>
-
-        <section>
-
-            <h2>Book Details</h2>
-
-            <table border="1">
-
-                <tr>
-                    <th>Size</th>
-                    <th>Pages</th>
-                    <th>Genre</th>
-                    <th>Price</th>
-                </tr>
-
-                <tr>
-                    <td>Medium</td>
-                    <td>320</td>
-                    <td>History</td>
-                    <td>₱1,100</td>
-                </tr>
-
-            </table>
-
-        </section>
-
-        <section>
-
-            <h2>Why You'll Love It</h2>
-
-            <ul>
-                <li>Comprehensive coverage of ancient history</li>
-                <li>Richly detailed descriptions of cultural practices</li>
-                <li>Insightful analysis of historical significance</li>
-                <li>Perfect for history enthusiasts</li>
-            </ul>
-
-        </section>
-
-        <section>
-            <h2>Order Enquiry</h2>
-        
-            <form>
-                <label for="quantity">Quantity:</label>
-                <input type="number" id="quantity" name="quantity" min="1" max="20">
-
-                <br><br>
-
-                <fieldset>
-                    <legend>Choose a delivery method:</legend>
-        
-                    <input type="radio" id="standard" name="delivery" value="standard">
-                    <label for="standard">Standard Delivery</label>
-        
-                    <input type="radio" id="express" name="delivery" value="express">
-                    <label for="express">Express Delivery</label>
-                </fieldset>
-        
-                <p>Optional Extras:</p>
-        
-                <input type="checkbox" id="gift" name="extras" value="gift">
-                <label for="gift">Gift Wrapping</label>
-        
-                <input type="checkbox" id="handling" name="extras" value="handling">
-                <label for="handling">Express Handling</label>
-        
-                <br><br>
-        
-                <label for="email">Contact Email:</label>
-                <input type="email" id="email" name="email" required>
-        
-                <br><br>
-        
-                <button type="submit">Send Enquiry</button>
-            </form>
-        </section>
-
-
-    </main>
-
-    <footer>
-
-        <p>&copy; 2026 Book Journey. All rights reserved.</p>
-
-    </footer>
+  <footer>
+    <p>&copy; 2026 Book Journey. All rights reserved.</p>
+  </footer>
 
 </body>
 
